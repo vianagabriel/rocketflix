@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    font-size: 62.5%;
+    --title: #fffcf9;
+    --subtitle: #b3b3b3;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+
+}
+
+body{
+    min-height: 100vh;
+    background: var(--background);
+    background-repeat: no-repeat;
+    color: var(--title);
+    margin: 0 auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+body:has(h2,p){
+    overflow-y: auto;
+}
+.title{
+ text-align: center;
+ padding-top: 5rem;
+
+}
+
+.title h1{
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.container-movies, .movie-infos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+.container-movies h2{
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+.container-movies p{
+    width: 31.6rem;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+.poster{
+    height: 21.7rem;
+}
+button{
+    padding: 1.1rem 1.3rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    font-weight: 700;
+    color: #000;
+    border: none;
+    margin-bottom: .7rem;
+    background-color: var(--bg-button);
+    cursor: pointer;
+}
+
+button img{
+   width: 3.5rem;
+  
+}
+
+span{
+    width: 37.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-inline: 1rem;
+    margin-bottom: 10.4rem;
+}
+
+@media(min-width: 800px){
+
+    .title{
+        padding-top: 6rem;
+    }
+    
+    .container-movies{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 3rem;
+    }
+    .container-movies .movie-infos{
+        align-items: initial;
+    }
+    .container-movies p{
+        width: 423px;
+        text-align: inherit;
+    }
+
+    span{
+        margin-bottom: 3rem;
+    }
+
+}
+
+.none{
+    display: none;
+}
